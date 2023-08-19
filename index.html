@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Template</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+      body {
+        margin: 0;
+      }
+      table {
+        border-spacing: 0;
+      }
+      td {
+        padding: 0;
+      }
+      img {
+        border: 0;
+      }
+      .logo {
+        width: 100%;
+        max-width: 160px;
+      }
+      p,
+      h1,
+      h2 {
+        font-family: "Roboto", sans-serif;
+      }
+
+      p {
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+      a {
+        white-space: nowrap;
+        text-decoration: none;
+        color: #1d71f0;
+      }
+      .wrapper {
+        width: 100%;
+        table-layout: fixed;
+        padding-bottom: 60px;
+
+        background-color: lightblue;
+      }
+      .main {
+        width: 100%;
+        max-width: 600px;
+        background-color: #fff;
+      }
+      .padding {
+        padding: 40px;
+      }
+
+      .multiple-columns {
+        font-size: 0;
+        text-align: center;
+      }
+      .column {
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      /* Line */
+
+      .line {
+        display: block;
+        height: 1px;
+        margin: 20px 40px;
+        background-color: #ced4da;
+        border-radius: 2px;
+      }
+      /* EXAMPLE */
+
+      .example .column {
+        max-width: 300px;
+      }
+
+      .example .padding {
+        padding: 20px;
+      }
+      .example p,
+      h2 {
+        font-size: 20px;
+      }
+      .example .column:last-child {
+        padding: 0 40px;
+      }
+      .icon-img {
+        width: 100%;
+        max-width: 260px;
+      }
+      /* primary text */
+      .padding.primary-text {
+        padding: 40px 40px 10px 40px;
+      }
+      .primary-text p {
+        margin: 0;
+        line-height: 26px;
+      }
+      .primary-text .summary-heading {
+        margin-top: 30px;
+        font-size: 15px;
+        color: #8494ac;
+      }
+      /* summary*/
+
+      .summary {
+        padding: 0 40px;
+        vertical-align: top;
+      }
+
+      .summary p {
+        font-size: 16px;
+      }
+      .summary .product {
+        width: 70%;
+      }
+      .summary .price {
+        width: 30%;
+      }
+      .price .price-tag {
+        font-weight: 600;
+      }
+      .product-info {
+        width: 380px;
+        text-align: left;
+      }
+      .extra-pricing {
+        max-width: 80px;
+        margin-bottom: 10px;
+      }
+      .info-img {
+        max-width: 120px;
+      }
+      .product-img {
+        width: 100%;
+        max-width: 100px;
+      }
+      .info {
+        max-width: 110px;
+      }
+      .info p,
+      .info h2 {
+        font-size: 15px;
+        margin-top: 10px;
+      }
+
+      .info p {
+        color: #8494ac;
+      }
+      .extra-pricing h2,
+      .price h2 {
+        font-size: 12px;
+        color: #8494ac;
+      }
+      .price-tag.total {
+        font-size: 16px;
+      }
+      /* MORE PRODUCTS */
+      .more-products {
+        padding: 40px 30px;
+      }
+      .more-products h1 {
+        font-size: 28px;
+        font-weight: 400;
+      }
+      .more-products p {
+        font-size: 15px;
+        color: #8494ac;
+      }
+      .more-products a {
+        font-weight: 600;
+      }
+
+      .products {
+        padding: 20px 0 0 0;
+      }
+
+      .products .column {
+        width: 100%;
+        max-width: 270px;
+        padding: 0 10px 20px 10px;
+        text-align: left;
+      }
+      .products-img {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 20px;
+        background-color: #f8f8fa;
+      }
+
+      /* FOOTER */
+      .footer {
+        padding: 0 40px 50px 40px;
+      }
+      .footer p {
+        font-size: 12px;
+        color: #8494ac;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <center class="wrapper">
+      <table class="main" width="100%">
+        <!-- LOGO -->
+        <tr>
+          <td style="text-align: center; padding: 20px">
+            <img class="logo" src="img/logo.png" alt="logo" />
+          </td>
+        </tr>
+        <tr>
+          <td class="padding primary-text">
+            <p>Hi Fabrizio</p>
+            <p>
+              Thank you for your purchase! We've received your order
+              <a href="#"> N°: 34341</a>, We will notify you when it has been
+              sent.
+            </p>
+
+            <p class="summary-heading">Order summary:</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <table style="width: 100%">
+              <tr>
+                <td class="multiple-columns summary">
+                  <table class="column product">
+                    <tr>
+                      <td class="multiple-columns product-info">
+                        <table class="column info-img">
+                          <tr>
+                            <td>
+                              <img
+                                class="product-img"
+                                src="img/xbox.png"
+                                alt="product image"
+                              />
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="column info">
+                          <tr>
+                            <td>
+                              <h2>Xbox series x</h2>
+                              <p>
+                                <span
+                                  style="
+                                    display: inline-block;
+                                    height: 10px;
+                                    width: 10px;
+                                    background-color: black;
+                                    border-radius: 10px;
+                                    margin-right: 5px;
+                                  "
+                                ></span>
+                                Black &nbsp Qty. 1
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="column price">
+                    <tr>
+                      <td
+                        style="
+                          width: 240px;
+                          max-width: 240px;
+                          text-align: right;
+                        "
+                      >
+                        <p class="price-tag">$699</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="line"></td>
+        </tr>
+
+        <tr>
+          <td>
+            <table style="width: 100%">
+              <tr>
+                <td class="multiple-columns summary">
+                  <table class="column product">
+                    <tr>
+                      <td class="multiple-columns product-info">
+                        <table class="column extra-pricing">
+                          <tr>
+                            <td>
+                              <h2>Subtotal</h2>
+                              <p>$699</p>
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="column extra-pricing">
+                          <tr>
+                            <td>
+                              <h2>Shipping</h2>
+                              <p>$10</p>
+                            </td>
+                          </tr>
+                        </table>
+                        <table class="column extra-pricing">
+                          <tr>
+                            <td>
+                              <h2>Taxes</h2>
+                              <p>$0</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="column price">
+                    <tr>
+                      <td
+                        style="
+                          width: 240px;
+                          max-width: 240px;
+                          text-align: right;
+                        "
+                      >
+                        <h2>Total</h2>
+                        <p class="price-tag total">$709</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- MORE PRODUCTS -->
+        <tr>
+          <td class="more-products">
+            <h1 style="padding: 0 10px">Perfect pairing</h1>
+            <p style="padding: 0 10px">
+              Combine with your order one of the followings items and get
+              delivered at the same time:
+            </p>
+            <table style="width: 100%">
+              <tr>
+                <td class="multiple-columns products">
+                  <table class="column">
+                    <tr>
+                      <td>
+                        <img
+                          class="products-img"
+                          src="img/controller.png"
+                          alt="product 1"
+                        />
+                        <p>Xbox controller</p>
+                        <p>USD $99</p>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="column">
+                    <tr>
+                      <td>
+                        <img
+                          class="products-img"
+                          src="img/beats.png"
+                          alt="product 2"
+                        />
+                        <p>Beats studio 3</p>
+                        <p>USD $99</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <p style="padding: 0 10px"><a href="#">Show all (20+) ></a></p>
+          </td>
+        </tr>
+
+        <!-- LINE -->
+        <tr>
+          <td class="line"></td>
+        </tr>
+        <!-- FOOTER  -->
+        <tr>
+          <td class="footer">
+            <p>
+              This email was sent to you as a registered member of
+              <a href="#">microsoft.com</a>. To update your emails preferences
+              <a href="#">click here</a>. Use of the service and website is
+              subject to our <a href="#">Terms of use</a> and
+              <a href="#">Privacy Statement</a>.
+            </p>
+            <p>©2019 Microsoft. All rights reserved</p>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
